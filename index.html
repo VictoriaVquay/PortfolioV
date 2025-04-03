@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria Mwende Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Victoria Mwende- Developer</h1>
+      
+    </header>
+    <nav class="navigation">
+        <ul class="nav-list">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home" class="section home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>I am a passionate software engineer dedicated to building innovative and scalable solutions. With expertise in modern web technologies, I thrive on solving complex problems and creating user-friendly applications that make a difference. Beyond coding, I am deeply committed to empowering women through digital technology, providing them with the skills and knowledge to thrive in the ever-evolving tech industry.</p>
+        <p>Whether it's designing sleek user interfaces, optimizing backend performance, or collaborating on dynamic projects, I bring creativity and technical precision to every line of code. My mission extends beyond software development—I strive to bridge the digital divide by mentoring and supporting women in underserved communities, helping them unlock new opportunities through technology. Explore my work and let's connect to build something amazing together!</p>
+    </section>
+    
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <img src="C:\Users\surface laptop\Documents\PLP\Reference\Vkii.jpg" alt="Victoria Mwende's profile picture" class="profile-pic">
+        <p>I am a software engineer with a strong passion for technology and its ability to create meaningful change. My expertise spans front-end and back-end development, with a deep understanding of modern frameworks, programming languages, and best practices. Over the years, I have worked on diverse projects, from web applications to scalable software solutions, always prioritizing efficiency, user experience, and innovation. Alongside my technical work, I am committed to empowering both women and youth with digital skills, helping them unlock opportunities in the ever-growing tech industry.</p>
+        <p>Beyond technical skills, I am driven by a mission to bridge the digital gap, particularly for women and youth in underserved communities. Through mentorship and digital training initiatives, I provide the knowledge and confidence needed to enter and excel in the tech industry. I believe that technology should be inclusive and accessible, and I am committed to making a lasting impact by equipping the next generation with the skills to thrive in a digital world. Let's build the future together!</p>
+        <p>In my free time, I enjoy exploring new technologies, contributing to open-source projects, and staying updated with industry trends. I am always eager to learn and grow, both personally and professionally. If you're interested in collaborating or learning more about my work, feel free to reach out!</p>
+    </section>
+    
+    <section id="projects" class="section projects">
+        <h2>My Work</h2>
+        <div class="carousel" aria-label="Project Carousel">
+            <div class="carousel-item">https://github.com/lugaye/feb-2025-week-4/blob/main/flexbox.html</div>
+            <div class="carousel-item">https://github.com/VictoriaVquay/project1.git</div>
+            <div class="carousel-item">https://github.com/VictoriaVquay/project2.git</div>
+        </div>
+    </section>
+    
+    <section id="skills" class="section skills">
+        <h2>Expertise</h2>
+        <p>I specialize in using a wide range of modern technologies to deliver high-performance and scalable solutions. I have hands-on experience building dynamic, interactive user interfaces. On the server-side, I work with Node.js, Express, and databases such as MongoDB and PostgreSQL to create secure and efficient web applications. My primary focus is always on writing clean, maintainable code while enhancing the overall user experience.</p>
+        <p>I am also experienced with version control tools like Git and GitHub, which are essential for collaborating effectively in team environments and managing large projects. I continually explore the latest technologies to ensure I can offer the most innovative solutions in the tech industry.</p>
+        <p>Outside of programming, I am passionate about promoting innovation within the tech world. I also champion the inclusion of women and youth in tech, contributing to initiatives that make technology more accessible and diverse. I believe in the transformative power of tech and am dedicated to using my skills to create a more inclusive and equitable future.</p>
+    </section>
+    <div class="carousel-container">
+        <button class="carousel-button prev" onclick="scrollCarousel(-1)">&#10094;</button>
+        
+        <div class="carousel" aria-live="polite" aria-hidden="false">
+            <div class="carousel-item">Database</div>
+            <div class="carousel-item">Web Development</div>
+            <div class="carousel-item">Python</div>
+            <div class="carousel-item">JavaScript</div>
+            <div class="carousel-item">HTML</div>   
+            <div class="carousel-item">CSS</div>
+            <div class="carousel-item">React</div>
+            <div class="carousel-item">Git</div>
+            <div class="carousel-item">GitHub</div>
+        </div>
+    
+        <button class="carousel-button next" onclick="scrollCarousel(1)">&#10095;</button>
+    </div>
+    
+    
+    <section id="contact" class="section contact">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch, please fill out the form below. I look forward to hearing from you!</p>
+        <section class="contact-info">
+            <p> Feel Free to reach out</p>
+        </section>
+        <form id="contact-form" class="contact-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Your Name" required><br>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Subject" required><br>
+            <label for="phone">Your Phone Number</label>
+            <input type="text" id="phone" placeholder="Your Phone Number" required><br>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Your Email" required><br>
+            <label for="message">Enter Your Message</label>
+            <textarea id="message" placeholder="Your Message" required></textarea><br>
+            <label for="social-media">Social Media</label>
+            <input type="text" id="social-media" placeholder="Your Social Media (optional)"><br>
+            <input type="file" id="file" accept=".jpg, .jpeg, .png, .pdf"><br>
+            <label for="file">Upload a file (optional)</label><br>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to My Newsletter</label><br>
+            <input type="checkbox" id="terms" name="terms" value="yes" required>
+            <label for="terms">I agree to the terms and conditions</label><br>
+            <input type="checkbox" id="privacy" name="privacy" value="yes" required>
+            <label for="privacy">I agree to the privacy policy</label><br>
+            <button type="submit">Send</button>
+            <p id="form-message"></p>
+        </form>
+    </section>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    <script src="script.js"></script>
+</body>
+</html>
