@@ -20,5 +20,5 @@ Slide through the content: Click the left and right arrows to navigate between s
 
 Dark Mode: Toggle between dark and light themes by clicking the "Toggle Dark Mode" button.
 
-Contact
-You can reach me via email: victoria.mwende@yahoo.com or follow me on GitHub: victoriavquay.
+##Contact
+You can reach me via email: victoria.mwende@yahoo.com or follow me on GitHub: VictoriaVquay.
