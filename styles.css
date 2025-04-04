@@ -504,5 +504,16 @@ input[type="checkbox"]:checked::after {
     scroll-behavior: smooth;
   }
     
+  .carousel-inner img {
+    width: 100%; /* Ensures images take full width */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        object-fit: cover; /* Keeps the images visually pleasing */
+    }
+}
+
   
   
