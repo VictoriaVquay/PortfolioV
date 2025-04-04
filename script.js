@@ -36,5 +36,10 @@ function scrollCarousel(direction) {
         carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     }
 }
+const welcomeText = document.querySelector('.welcome-text');
+welcomeText.addEventListener('click', () => {
+  welcomeText.style.animation = 'fadeSlideUp 2s ease-in-out';
+});
+
 
 

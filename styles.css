@@ -331,6 +331,178 @@ input[type="checkbox"]:checked::after {
     border-width: 0 2px 2px 0; /* Create a checkmark shape */
     transform: rotate(45deg); /* Rotate to form a checkmark */
 }
+@keyframes fadeSlideUp {
+    0% {
+      opacity: 0;/* Start invisible */
+      transform: translateY(20px);/* Start slightly below */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .welcome-text {
+    font-size: 16px;
+    text-align: center;
+    color: #008080;
+    animation: fadeSlideUp 2s ease-in-out;
+  }
+  
+    .welcome-text h1 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+@keyframes fadeSlideColor {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    color: #ff0000; /* Start with red */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    color: #0000ff; /* End with blue */
+  }
+}
 
-
-
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .welcome-text {
+    font-size: 16px;
+    text-align: center;
+    animation: bounce 2s ease-in-out infinite;
+  }
+  
+  .welcome-text:hover {
+    animation: fadeSlideUp 1s ease-in-out;
+  }
+  @keyframes fadeSlideColorShadow {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+      color: #008080; /* Starts with teal */
+      text-shadow: 0px 0px 0px rgba(0, 0, 0, 0); /* No shadow at start */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+      color: #800080; /* Ends with purple */
+      text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.7); /* Deep shadow effect */
+    }
+  }
+  .about-me-text {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    animation: fadeSlideColorShadow 2s ease-in-out;
+  }
+    
+  body {
+    background-image: url('setup.jpg'); /* Your image */
+    background-size: cover; /* Adjusts to cover the screen dynamically */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+  }
+  
+  /* For smaller screens */
+  @media (max-width: 768px) {
+    body {
+      background-size: auto; /* Adjusts image size for smaller devices */
+    }
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    color: navy;
+    font-size: 18px;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .social-links a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .social-links-section {
+    background-color: #f3f3f3;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .expertise-image {
+    display: block;
+    margin: 20px auto; /* Centers the image with space */
+    max-width: 100%; /* Prevents large images from overflowing */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Creates a subtle shadow */
+  }
+  .expertise-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  .navbar {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #ff6b6b;
+  }
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar a {
+      display: block;
+      margin: 5px 0;
+    }
+  }
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar a {
+      display: block;
+      margin: 5px 0;
+    }
+  }
+          
+  .active {
+    font-weight: bold;
+    border-bottom: 3px solid #ff6b6b;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+    
+  
+  

@@ -6,6 +6,10 @@
     <title>Victoria Mwende Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <a href="home.html" class="active">Home</a>
+
+
 </head>
 <body>
     <header class="header">
@@ -24,16 +28,16 @@
     
     <section id="home" class="section home">
         <h2>Welcome to My Portfolio</h2>
-        <p>I am a passionate software engineer dedicated to building innovative and scalable solutions. With expertise in modern web technologies, I thrive on solving complex problems and creating user-friendly applications that make a difference. Beyond coding, I am deeply committed to empowering women through digital technology, providing them with the skills and knowledge to thrive in the ever-evolving tech industry.</p>
-        <p>Whether it's designing sleek user interfaces, optimizing backend performance, or collaborating on dynamic projects, I bring creativity and technical precision to every line of code. My mission extends beyond software development—I strive to bridge the digital divide by mentoring and supporting women in underserved communities, helping them unlock new opportunities through technology. Explore my work and let's connect to build something amazing together!</p>
+        <p class="welcome-text">I am a passionate software engineer dedicated to building innovative and scalable solutions. With expertise in modern web technologies, I thrive on solving complex problems and creating user-friendly applications that make a difference. Beyond coding, I am deeply committed to empowering women through digital technology, providing them with the skills and knowledge to thrive in the ever-evolving tech industry.</p>
+        <p class="welcome-text">Whether it's designing sleek user interfaces, optimizing backend performance, or collaborating on dynamic projects, I bring creativity and technical precision to every line of code. My mission extends beyond software development—I strive to bridge the digital divide by mentoring and supporting women in underserved communities, helping them unlock new opportunities through technology. Explore my work and let's connect to build something amazing together!</p>
     </section>
     
     <section id="about" class="section about">
         <h2>About Me</h2>
-        <img src="C:\Users\surface laptop\Documents\PLP\Reference\Vkii.jpg" alt="Victoria Mwende's profile picture" class="profile-pic">
-        <p>I am a software engineer with a strong passion for technology and its ability to create meaningful change. My expertise spans front-end and back-end development, with a deep understanding of modern frameworks, programming languages, and best practices. Over the years, I have worked on diverse projects, from web applications to scalable software solutions, always prioritizing efficiency, user experience, and innovation. Alongside my technical work, I am committed to empowering both women and youth with digital skills, helping them unlock opportunities in the ever-growing tech industry.</p>
-        <p>Beyond technical skills, I am driven by a mission to bridge the digital gap, particularly for women and youth in underserved communities. Through mentorship and digital training initiatives, I provide the knowledge and confidence needed to enter and excel in the tech industry. I believe that technology should be inclusive and accessible, and I am committed to making a lasting impact by equipping the next generation with the skills to thrive in a digital world. Let's build the future together!</p>
-        <p>In my free time, I enjoy exploring new technologies, contributing to open-source projects, and staying updated with industry trends. I am always eager to learn and grow, both personally and professionally. If you're interested in collaborating or learning more about my work, feel free to reach out!</p>
+        <img src="Vkii.jpg" alt="Victoria Mwende's profile picture" class="profile-pic">
+        <p class="about-me-text">I am a so ftware engineer with a strong passion for technology and its ability to create meaningful change. My expertise spans front-end and back-end development, with a deep understanding of modern frameworks, programming languages, and best practices. Over the years, I have worked on diverse projects, from web applications to scalable software solutions, always prioritizing efficiency, user experience, and innovation. Alongside my technical work, I am committed to empowering both women and youth with digital skills, helping them unlock opportunities in the ever-growing tech industry.</p>
+        <p class="about-me-text">Beyond technical skills, I am driven by a mission to bridge the digital gap, particularly for women and youth in underserved communities. Through mentorship and digital training initiatives, I provide the knowledge and confidence needed to enter and excel in the tech industry. I believe that technology should be inclusive and accessible, and I am committed to making a lasting impact by equipping the next generation with the skills to thrive in a digital world. Let's build the future together!</p>
+        <img src="plong.jpg" alt="Learning Platform" class="expertise-image">
     </section>
     
     <section id="projects" class="section projects">
@@ -47,9 +51,12 @@
     
     <section id="skills" class="section skills">
         <h2>Expertise</h2>
-        <p>I specialize in using a wide range of modern technologies to deliver high-performance and scalable solutions. I have hands-on experience building dynamic, interactive user interfaces. On the server-side, I work with Node.js, Express, and databases such as MongoDB and PostgreSQL to create secure and efficient web applications. My primary focus is always on writing clean, maintainable code while enhancing the overall user experience.</p>
+        <p> I have hands-on experience building dynamic, interactive user interfaces. On the server-side, I work with Node.js, Express, and databases such as MongoDB and PostgreSQL to create secure and efficient web applications.
+             My primary focus is always on writing clean, maintainable code while enhancing the overall user experience.</p>
+    <img src="Project.jpg" alt="Learning Platform" class="expertise-image">
         <p>I am also experienced with version control tools like Git and GitHub, which are essential for collaborating effectively in team environments and managing large projects. I continually explore the latest technologies to ensure I can offer the most innovative solutions in the tech industry.</p>
-        <p>Outside of programming, I am passionate about promoting innovation within the tech world. I also champion the inclusion of women and youth in tech, contributing to initiatives that make technology more accessible and diverse. I believe in the transformative power of tech and am dedicated to using my skills to create a more inclusive and equitable future.</p>
+        <p>Outside of programming, I am passionate about promoting innovation within the tech world. 
+            I also champion the inclusion of women and youth in tech, contributing to initiatives that make technology more accessible and diverse. I believe in the transformative power of tech and am dedicated to using my skills to create a more inclusive and equitable future.</p>
     </section>
     <div class="carousel-container">
         <button class="carousel-button prev" onclick="scrollCarousel(-1)">&#10094;</button>
@@ -72,10 +79,17 @@
     
     <section id="contact" class="section contact">
         <h2>Contact</h2>
-        <p>If you would like to get in touch, please fill out the form below. I look forward to hearing from you!</p>
-        <section class="contact-info">
+    
             <p> Feel Free to reach out</p>
-        </section>
+        
+        <div class="social-links">
+            <a href="https://github.com/Victoria" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/in/Victoria" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://twitter.com/Victoria" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://victoria.mwende@yahoo.com" target="_blank"><i class="fab fa-email"></i> Email</a>
+            <a href="https://facebook.com/Victoria" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+          </div>
+          <p>If you would like to get in touch, please fill out the form below. I look forward to hearing from you!</p>
         <form id="contact-form" class="contact-form">
             <label for="name">Your Name</label>
             <input type="text" id="name" placeholder="Your Name" required><br>
@@ -101,6 +115,10 @@
             <p id="form-message"></p>
         </form>
     </section>
+   
+    <footer class="footer">
+        <p>&copy; 2023 Victoria Mwende. All rights reserved.</p>
+        <p>Designed by Victoria Mwende</p>      
     <button id="dark-mode-toggle">Toggle Dark Mode</button>
     <script src="script.js"></script>
 </body>
